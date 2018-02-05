@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_orange_hyper_light"
+    tools:context="cat.rupasgon.reten.MainActivity">
+
+    <Spinner
+        android:id="@+id/responsable"
+        android:layout_width="242dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLineProduction"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <CheckBox
+        android:id="@+id/checkRUBI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="RUBI2"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.612"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:allowUndo="false"
+        android:autoText="false"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Descripción incidencia"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:selectAllOnFocus="false"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="#a9edf4"
+        android:textColorHint="#d57200"
+        android:textColorLink="@android:color/background_dark"
+        android:textIsSelectable="false"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Deprecated,HardcodedText"
+        android:layout_marginTop="25dp"
+        tools:targetApi="m" />
+
+    <EditText
+        android:id="@+id/textSolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Solución incidencia"
+        android:inputType="textCapSentences"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="#a9edf4"
+        android:textColorHint="#d57200"
+        android:textColorLink="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/insertIncidence"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescription"
+        app:layout_constraintVertical_bias="0.081"
+        tools:ignore="Deprecated,HardcodedText" />
+
+    <EditText
+        android:id="@+id/textIH"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="H. Inicio"
+        android:inputType="time"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="#a9edf4"
+        android:textColorHint="#d57200"
+        android:textColorLink="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/textFH"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="H. Final"
+        android:inputType="time"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="#a9edf4"
+        android:textColorHint="#d57200"
+        android:textColorLink="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkCHUD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CHUD"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.465"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="FA"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.538"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checPresencial"
+        android:layout_width="134dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Averia presencial"
+        android:textColor="#d57200"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+        android:textColorHint="#d57200"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/insertIncidence"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.52"
+        tools:ignore="HardcodedText"
+        app:layout_constraintTop_toBottomOf="@+id/responsable" />
+
+    <CheckBox
+        android:id="@+id/checkEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="EM"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.392"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/insertIncidence"
+        android:layout_width="329dp"
+        android:layout_height="58dp"
+        android:background="@android:color/holo_orange_dark"
+        android:elevation="22dp"
+        android:onClick="addIncidence"
+        android:text="Enviar Incidencia"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964"
+        tools:ignore="HardcodedText" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp"
+        tools:layout_editor_absoluteY="10dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="395dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="494dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="494dp" />
+
+    <Spinner
+        android:id="@+id/textLineProduction"
+        android:layout_width="242dp"
+        android:layout_height="30dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline5"
+        app:layout_constraintGuide_begin="347dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="347dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline6"
+        app:layout_constraintGuide_begin="272dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="272dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline7"
+        app:layout_constraintGuide_begin="189dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="189dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/ButtonSYNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="syncToMSQL"
+        android:text="SYNC"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+</android.support.constraint.ConstraintLayout>

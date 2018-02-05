@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fbae04</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="holo_orange_hyper_light">#1fb3b3b2</color>
+    <color name="holo_orange_medium_light">#1fdabd82</color>
+    <color name="colorBackgroud">#BDBDBD</color>
+    <color name="colorBackgroundDark">#848484</color>
+    <color name="colorMidleBackgroundDark">#A4A4A4</color>
+    <color name="colorBlack">#000000</color>
+
+</resources>

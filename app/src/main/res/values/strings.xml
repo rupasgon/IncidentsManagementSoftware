@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name" text-align="center">ContiReten</string>
+    <string name="sync">SYNC</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="uid">UID</string>
+    <string name="servidor">Servidor</string>
+    <string name="base_de_datos">Base de Datos</string>
+    <string name="usuario_sql">Usuario SQL</string>
+    <string name="password_sql">Password SQL</string>
+    <string name="configuraci_n">CONFIGURACIÓN</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="editar_incidencias">Editar Incidencias</string>
+    <string name="total_horas">Total Horas</string>
+    <string name="nueva_incidencia">Nueva Incidencia</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:layout_gravity="fill_horizontal"
+    tools:context="cat.rupasgon.reten.Menu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundDark"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+
+            android:id="@+id/button_Nueva_Incidencia"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/nueva_incidencia"
+            android:textAlignment="center" />
+
+
+        <Space style="@style/espacio" />
+
+
+        <Button
+            android:id="@+id/button_Editar_Incidencias"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onClickNueva"
+            android:text="@string/editar_incidencias"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</FrameLayout>
